@@ -56,7 +56,7 @@ message[text] = "Coding rules";// CODE HERE
  * Create an array called 'myFriends' with four of your friends names.
  */
 
-// CODE HERE
+var myFriends = ["Jake", "Caleb", "Danny", "Tyler"];// CODE HERE
 
 /**
  * #6
@@ -64,7 +64,7 @@ message[text] = "Coding rules";// CODE HERE
  * Add a fifth friends name to the end of your 'myFriends' array.
  */
 
-// CODE HERE
+myFriends.push("Scott");// CODE HERE
 
 /**
  * #7
@@ -76,7 +76,7 @@ message[text] = "Coding rules";// CODE HERE
 // DON'T TOUCH THE CODE BELOW
 var myArray = [1, 2, 3, 4];
 // DON'T TOUCH THE CODE ABOVE
-// CODE HERE
+var myArrayCopy = myArray.slice(0);// CODE HERE
 
 /**
  * #8
@@ -88,8 +88,13 @@ var myArray = [1, 2, 3, 4];
 //DON'T TOUCH THE CODE BELOW
 var myNumbers = [333, 1, 4, 5, 511, 34, 88, 77, 222];
 //DON'T TOUCH THE CODE ABOVE
-function evensOnly() {
-  // CODE HERE
+var evenNumbersOnly=[];
+function evensOnly(arr) {
+  forEach(function(val,i,arr){
+    if(arr[i]%2 === 0){
+      evensOnly.push(evenNumbersOnly);
+    }
+  }// CODE HERE
 }
 
 /**
@@ -99,7 +104,12 @@ function evensOnly() {
  * Assign it to a variable called 'trueFriends'.
  */
 
-// CODE HERE
+ var trueFriends = peopleIknow.filter(function(val,i,arr){
+   if(val.friend==true){
+     trueFriends.push(val.name);
+   }
+ });// CODE HERE
+
 var peopleIknow = [
   { name: "Steve", friend: true },
   { name: "Dan", friend: false },
@@ -119,3 +129,9 @@ var peopleIknow = [
  */
 
 let randomNumbers = [1, 3453, 34, 456, 32, 3, 2, 0];
+let indexes = [];
+function indexFinder(arr){
+  for(i=0;arr.length;i++){
+    indexes.push(i);
+  }return indexes;
+};

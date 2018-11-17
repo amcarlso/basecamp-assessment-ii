@@ -5,7 +5,11 @@
  * Assign the keys the appropriate values.
  */
 
-// CODE HERE
+var me = {
+  firstname: "Allen",
+  age: 26,
+  state: "Utah"
+};// CODE HERE
 
 /**
  * #2
@@ -14,7 +18,7 @@
  * The new key should be 'faveColor'. Set it to your favorite color as a string.
  */
 
-// CODE HERE
+me.faveColor = "Blue";// CODE HERE
 
 /**
  * #3
@@ -29,7 +33,7 @@ var message = {
   userName: me.firstname
 };
 // DON'T TOUCH THE CODE ABOVE
-// CODE HERE
+message[text] = "Coding rules";// CODE HERE
 
 /**
  * #4
@@ -39,7 +43,12 @@ var message = {
  * downVote() should take in a number, subtract one from it, and return the number.
  */
 
-// CODE HERE
+ var adjustCount = {
+   upVote: function(num){
+   return num++;},
+   downVote: function(num){
+   return num--;}
+ };// CODE HERE
 
 /**
  * #5
